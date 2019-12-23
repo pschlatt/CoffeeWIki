@@ -13,9 +13,10 @@
 		17EF6E9B23B15C98004F8C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17EF6E9A23B15C98004F8C03 /* Assets.xcassets */; };
 		17EF6E9E23B15C98004F8C03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17EF6E9D23B15C98004F8C03 /* Preview Assets.xcassets */; };
 		17EF6EA123B15C98004F8C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EF6E9F23B15C98004F8C03 /* LaunchScreen.storyboard */; };
-		17EF6EA923B15EA8004F8C03 /* Drinks.json in Resources */ = {isa = PBXBuildFile; fileRef = 17EF6EA823B15EA8004F8C03 /* Drinks.json */; };
+		17EF6EA923B15EA8004F8C03 /* drinks.json in Resources */ = {isa = PBXBuildFile; fileRef = 17EF6EA823B15EA8004F8C03 /* drinks.json */; };
 		17EF6EAB23B15F98004F8C03 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF6EAA23B15F98004F8C03 /* Data.swift */; };
 		17EF6EAD23B15FB7004F8C03 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF6EAC23B15FB7004F8C03 /* Drink.swift */; };
+		17EF6EAF23B16B4B004F8C03 /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF6EAE23B16B4B004F8C03 /* DrinkItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,10 @@
 		17EF6E9D23B15C98004F8C03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17EF6EA023B15C98004F8C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17EF6EA223B15C98004F8C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17EF6EA823B15EA8004F8C03 /* Drinks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Drinks.json; sourceTree = "<group>"; };
+		17EF6EA823B15EA8004F8C03 /* drinks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = drinks.json; sourceTree = "<group>"; };
 		17EF6EAA23B15F98004F8C03 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		17EF6EAC23B15FB7004F8C03 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		17EF6EAE23B16B4B004F8C03 /* DrinkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,16 +64,17 @@
 		17EF6E9323B15C97004F8C03 /* CoffeeWIki */ = {
 			isa = PBXGroup;
 			children = (
+				17EF6EA823B15EA8004F8C03 /* drinks.json */,
 				17EF6E9423B15C97004F8C03 /* AppDelegate.swift */,
 				17EF6E9623B15C97004F8C03 /* SceneDelegate.swift */,
 				17EF6EAA23B15F98004F8C03 /* Data.swift */,
 				17EF6EAC23B15FB7004F8C03 /* Drink.swift */,
 				17EF6E9823B15C97004F8C03 /* ContentView.swift */,
+				17EF6EAE23B16B4B004F8C03 /* DrinkItem.swift */,
 				17EF6E9A23B15C98004F8C03 /* Assets.xcassets */,
 				17EF6E9F23B15C98004F8C03 /* LaunchScreen.storyboard */,
 				17EF6EA223B15C98004F8C03 /* Info.plist */,
 				17EF6E9C23B15C98004F8C03 /* Preview Content */,
-				17EF6EA823B15EA8004F8C03 /* Drinks.json */,
 			);
 			path = CoffeeWIki;
 			sourceTree = "<group>";
@@ -144,7 +147,7 @@
 			files = (
 				17EF6EA123B15C98004F8C03 /* LaunchScreen.storyboard in Resources */,
 				17EF6E9E23B15C98004F8C03 /* Preview Assets.xcassets in Resources */,
-				17EF6EA923B15EA8004F8C03 /* Drinks.json in Resources */,
+				17EF6EA923B15EA8004F8C03 /* drinks.json in Resources */,
 				17EF6E9B23B15C98004F8C03 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +164,7 @@
 				17EF6E9923B15C97004F8C03 /* ContentView.swift in Sources */,
 				17EF6EAD23B15FB7004F8C03 /* Drink.swift in Sources */,
 				17EF6EAB23B15F98004F8C03 /* Data.swift in Sources */,
+				17EF6EAF23B16B4B004F8C03 /* DrinkItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
