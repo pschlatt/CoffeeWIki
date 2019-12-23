@@ -13,7 +13,28 @@ struct DrinkItem: View {
     var drink:Drink
     
     var body: some View {
-        Image(drink.imageName)
+        VStack(alignment: .leading, spacing: 16.0) {
+            Image(drink.imageName)
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 300, height: 170)
+            .cornerRadius(10)
+            .shadow(radius: 10)
+            
+            VStack(alignment: .leading, spacing: 5.0) {
+                Text(drink.name)
+                    .font(.headline)
+                Text(drink.description)
+                    .font(.subheadline)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(2)
+                    .frame(height: 40)
+                           
+            }
+           
+           
+        }
+        
     }
 }
 
