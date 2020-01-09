@@ -14,14 +14,21 @@ struct DrinkRow: View {
     var drinks:[Drink]
     
     var body: some View {
-        
-        ForEach (self.drinks, id: \.name){
-        drink in
-        DrinkItem(drink: drink)
-            .frame(width: 300)
-            .padding(.trailing, 30)
+        VStack(alignment: .leading){
+            Text(self.categoryName)
+                .font(.title)
+            
+            ScrollView(.horizontal, showsIndicators: false){
+                HStack {
+                    ForEach (self.drinks, id: \.name){
+                        drink in
+                        DrinkItem(drink: drink)
+                            .frame(width: 300)
+                            .padding(.trailing, 30)
+                    }
+                }
+            }
         }
-        
     }
 }
 

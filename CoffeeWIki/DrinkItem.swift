@@ -16,6 +16,7 @@ struct DrinkItem: View {
         VStack(alignment: .leading, spacing: 16.0) {
             Image(drink.imageName)
             .resizable()
+                .renderingMode(.original)
             .aspectRatio(contentMode: .fill)
             .frame(width: 300, height: 170)
             .cornerRadius(10)
